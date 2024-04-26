@@ -1,0 +1,107 @@
+/* all */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+
+.person-add {
+  display: flex;
+  height: 100vh;
+  justify-content: center; /*center vertically */
+  align-items: center; /* center horizontally */
+  background: rgba(71, 147, 227, 1);
+  padding: 10px;
+}
+
+.person-add * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.person-container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.person-container .title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.person-container form .user_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user_details .input_box {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+
+.user_details .input_box .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  float: left;
+}
+
+.user_details .input_box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user_details .input_box input:focus,
+.user_details .input_box input:valid {
+  border-color: #2a59d1;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #324960;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 584px) {
+  .person-container {
+    max-width: 100%;
+  }
+
+  form .user_details .input_box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .person-container form .user_details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user_details::-webkit-scrollbar {
+    width: 0;
+  }
+}
